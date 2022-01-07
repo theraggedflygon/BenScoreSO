@@ -7,7 +7,7 @@ A template spreadsheet has been attached in Excel format. Download this spreadsh
 In the Google Sheets editor, under the "Extensions" menu in the top ribbon click "Apps Script". This will open up the Google App Scripts editor where there will be a blank .gs file, which is a modified JavaScript format that runs most Vanilla JS code. Copy and past the contents of `benscore.gs` into that file and save the changes. Return to the Google Sheet and reload it. You should now see a "Macros" menu in the top ribbon. The scoring system is now ready for use.
 
 ## Entering Teams and Events
-Navigate to the "Data" tab of the scoresheet and enter the team names and event names in the desired order of how they should appear on the final scoresheets. Overwrite the sample "Team 1", "Team 2", "Event 1", etc. placeholders currently there. The system supports up to 500 teams and 30 events.
+Navigate to the "Data" tab of the scoresheet and enter the team names and event names in the desired order of how they should appear on the final scoresheets. Overwrite the sample "Team 1", "Team 2", "Event 1", etc. placeholders currently there. The system supports up to 500 teams and 50 events.
 
 Once teams and events have been entered, go under the Macros menu and run "Setup BenScore". You will need to log in with your Google account to authorize the Macros. After you have authorized the script, if the script does not automatically run, please click it again and it will generate the scoring sheet as well as the indvidual event sheets.
 

@@ -62,7 +62,6 @@ function setUpResultsSheet() {
 
   for (let i = 0; i < events.length; i++) {
     setUpEventSetupSheet(events[i]);
-
   }
 }
 
@@ -131,7 +130,7 @@ function setUpEventScoreSheet() {
   let tiebreakerData = new Array(pointValues.length + 5);
   tiebreakerData[1] = "Tiebreaks"
   for (let i = 0; i < tiebreakers.length; i++) {
-    tiebreakerData[tiebreakers[i][1] + 3] = tiebreakers[i][0];
+    tiebreakerData[tiebreakers[i][1] + 2] = tiebreakers[i][0];
   }
   
   eventSheet.clear();

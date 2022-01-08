@@ -211,7 +211,7 @@ function rankEventTeams() {
     if (s1[1] === s2[1]) {
       const tb1 = tbScores[s1[0]];
       const tb2 = tbScores[s2[0]];
-      for (let i = 0; i < tbScores.length; i++) {
+      for (let i = 0; i < tb1.length; i++) {
         if (tb1[i] === tb2[i]) {
           continue;
         } else if (tb1[i] < tb2[i]) {
@@ -236,7 +236,7 @@ function rankEventTeams() {
       } else {
           const tb1 = tbScores[scores[i][0]];
           const tb2 = tbScores[scores[i + 1][0]];
-          for (let i = 0; i < tbScores.length; i++) {
+          for (let i = 0; i < tb1.length; i++) {
             if (tb1[i] === tb2[i]) {
               continue;
             } else {

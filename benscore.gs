@@ -225,9 +225,27 @@ function rankEventTeams() {
       return s1[1] < s2[1] ? 1 : -1;
     }
   })
+
+  let rank = 1;
   let ranks = new Array(scores.length).fill(0);
   for (let i = 0; i < scores.length; i++) {
-    ranks[scores[i][0]] = [i + 1];
+    ranks[scores[i][0]] = [rank];
+    if (i !== scores.length - 1) {
+      if (scores[i][1] !== scores[i + 1][1]) {
+        rank = i + 2;
+      } else {
+          const tb1 = tbScores[scores[i][0]];
+          const tb2 = tbScores[scores[i + 1][0]];
+          for (let i = 0; i < tbScores.length; i++) {
+            if (tb1[i] === tb2[i]) {
+              continue;
+            } else {
+              rank = i + 2;
+              break;
+            }
+        }
+      }
+    }
   }
   
   const rankRange = eventSheet.getRange(5, qNum + 5, teams.length, 1);
